@@ -49,6 +49,7 @@ def finish_game(score,window):
     window.refresh()
     time.sleep(2)
 
+#MODULO DE VERIFICA DE SOBRE POSICAO DE CARACTER
 def direction_is_opposite(direction, current_direction):
     match direction:
         case curses.KEY_UP:
