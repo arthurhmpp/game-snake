@@ -66,6 +66,7 @@ def get_new_fuit(window):
     height, width = window.getmaxyx()
     return [random.randint(1,height-2), random.randint(1,width-2)]
 
+#MODULO PARA DETECTAR FIM DE TELA
 def snake_hit_border(snake, window):
     head = snake[0]
     return actor_hit_border(actor=head, window=window)
