@@ -61,6 +61,7 @@ def direction_is_opposite(direction, current_direction):
         case curses.KEY_RIGHT:
             return current_direction == curses.KEY_LEFT
 
+#MODULO PARA CRIACAO DA FRUTA
 def get_new_fuit(window):
     height, width = window.getmaxyx()
     return [random.randint(1,height-2), random.randint(1,width-2)]
