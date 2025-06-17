@@ -39,6 +39,7 @@ def game_loop(window, game_speed):
         current_direction = direction
     finish_game(score, window)
 
+#MODULO DE MENSAGEM DE FIM DE JOGO
 def finish_game(score,window):
     height, width = window.getmaxyx()
     s = f'VOCÊ PERDEU!!  COLETOU {score} FRUTAS!!'
